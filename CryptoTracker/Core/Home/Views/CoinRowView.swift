@@ -25,6 +25,7 @@ struct CoinRowView: View {
             
         }
         .font(.subheadline)
+        .background(Color.theme.background)
     }
 }
 
@@ -48,7 +49,7 @@ extension CoinRowView {
     
     private var centerColumn: some View {
         VStack(alignment: .trailing) {
-            Text(coin.currentHoldignsValue.asCurrencyWith2Decimals())
+            Text(coin.currentHoldingsValue.asCurrencyWith2Decimals())
                 .bold()
             
             Text((coin.currentHoldings ?? 0).asNumberString())
