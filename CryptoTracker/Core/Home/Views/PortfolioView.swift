@@ -33,6 +33,7 @@ struct PortfolioView: View {
                     removeSelectedCoin()
                 }
             }
+            .background(Color.theme.background.ignoresSafeArea())
             .navigationTitle("Edit Portfolio")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
